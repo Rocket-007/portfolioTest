@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Brittany Chiang</h1>
+            <h2>Software Developer & Designer</h2>
+            <p>I build accessible, pixel-perfect digital experiences for the web.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">EXPERIENCE</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="codepen-icon.png" alt="CodePen"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="goodreads-icon.png" alt="Goodreads"></a>
+            </div>
+        </aside>
+        <main class="content">
+            <section class="about">
+                <p>
+                    I'm a Software Developer specializing in apps, games,
+                    and websites, with a passion for creating digital
+                    solutions that blend functionality and aesthetics.
+                    
+                </p>
+                <p>
+                    I am dedicated to creating engaging experiences
+                    and innovative designs that captivate users and
+                    push technological boundaries.
+                </p>
+                <p>
+                    Currently, I'm a <strong>Senior Front-End Engineer at Klaviyo</strong>, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo’s frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
+                </p>
+                <p>
+                    In the past, I've had the opportunity to develop software across a variety of settings — from <strong>advertising agencies</strong> and <strong>large corporations</strong> to <strong>start-ups</strong> and <strong>small digital product studios</strong>. Additionally, I also released a <strong>comprehensive video course</strong> a few years ago, guiding learners through building a web app with the Spotify API.
+                </p>
+                <p>
+                    In my spare time, I’m usually climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for <strong>Korok seeds</strong>.
+                </p>
+            </section>
+            <section class="experience">
+                <h3>2024 — PRESENT</h3>
+                <h2>Senior Frontend Engineer, Accessibility · Klaviyo</h2>
+                <p>
+                    Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                </p>
+                <div class="tags">
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Storybook</span>
+                </div>
+            </section>
+            <section id="projects">
+              <h3>Projects</h3>
+              <div class="filter-buttons">
+                  <button onclick="filterProjects('all')">All</button>
+                  <button onclick="filterProjects('game-development')">Game Development</button>
+                  <button onclick="filterProjects('web-development')">Web Development</button>
+                  <button onclick="filterProjects('python')">Python</button>
+              </div>
+              <div id="project-list">
+                  <!-- Love2D/Lua Projects -->
+                  <div class="project game-development" data-stars="50">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4><a href="https://rocket-007.github.io/2dBlobs_page.html">2D Blobs</a></h4>
+                          <p>A 2D platformer shooter game with cool and bright graphics.</p>
+                          <span>Technologies: Love2D, Lua</span>
+                      </div>
+                  </div>
+                  <div class="project game-development" data-stars="40">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4>WeDraw</h4>
+                          <p>A multiplayer drawing project.</p>
+                          <span>Technologies: Love2D, Lua</span>
+                      </div>
+                  </div>
+                  <div class="project game-development" data-stars="35">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4>BIO - Battle It Out</h4>
+                          <p>A unique multiplayer 2D platformer shooter.</p>
+                          <span>Technologies: Love2D, Lua</span>
+                      </div>
+                  </div>
+                  <div class="project game-development" data-stars="30">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4>WhereTo?</h4>
+                          <p>A MODE-7 Temple Runner Game.</p>
+                          <span>Technologies: Love2D, Lua</span>
+                      </div>
+                  </div>
+      
+                  <!-- Python Projects -->
+                  <div class="project python" data-stars="25">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4>First Year College Class Python Projects</h4>
+                          <p>Various projects developed during my first year of college.</p>
+                          <span>Technologies: Python</span>
+                      </div>
+                  </div>
+                  <div class="project python" data-stars="20">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4>Random Python Code</h4>
+                           <p>A collection of random Python scripts and experiments.</p>
+                          <span>Technologies: Python</span>
+                      </div>
+                  </div>
+                  <div class="project game-development" data-stars="15">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4>Pygame Projects</h4>
+                          <p>Games and experiments developed using Pygame.</p>
+                          <span>Technologies: Pygame, Python</span>
+                      </div>
+                  </div>
+      
+                  <!-- Godot Projects -->
+                  <div class="project game-development" data-stars="6">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4><a href="https://github.com/Rocket-007/Crossword-Game-Project---Godot">Crossword Game Project</a></h4>
+                          <p>A fun crossword game with over 100 levels to keep players engaged.</p>
+                          <span>Technologies: Godot</span>
+                      </div>
+                  </div>
+                  <div class="project game-development" data-stars="1">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4><a href="https://github.com/Rocket-007/Click-and-draw-line-through-many-points---GODOT">Click and Draw Line Through Many Points</a></h4>
+                          <p>A project demonstrating how to click and draw lines through multiple points in Godot.</p>
+                          <span>Technologies: Godot</span>
+                      </div>
+                  </div>
+                  <div class="project game-development" data-stars="1">
+                      <img src="images/image_1.jpg" alt="">
+                      <div class="project-info">
+                          <h4><a href="https://github.com/Rocket-007/BALLSBEAT-first-game-jam-">BALLSBEAT</a></h4>
+                          <p>A game developed during my first game jam after learning the Godot engine for a month.</p>
+                          <span>Technologies: Godot</span>
+                        </div>
+                    </div>
+          </section>
+      
+          <section id="contact">
+              <h3>Contact</h3>
+              <p>Feel free to reach out to me via <a href="mailto:your.email@example.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>.</p>
+          </section>
+        </main>
+    </div>
+</body>
+</html>
