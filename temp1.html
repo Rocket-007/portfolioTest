@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="css/styles.csss">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 250px;
+            background: #112240;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto; /* Enable scrolling if content is large */
+        }
+
+        main {
+            flex: 1;
+            margin-left: 250px; /* Same as aside width */
+            padding: 20px;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                position: relative;
+                height: auto;
+                padding: 15px;
+            }
+
+            main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Menu items go here.</p>
+            <hr>sdfs
+        </aside>
+
+        <main>
+            <h1>Main Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>Scroll to see how the sidebar remains fixed on large screens.</p>
+
+            <br>
+            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>        
+
+            <br>
+            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>            <br>
+            <br>        
+            <hr>
+
+        </main>
+    </div>
+
+</body>
+</html>
