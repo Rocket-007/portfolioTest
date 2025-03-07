@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Highlight</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a192f; /* Dark background for better effect */
+        }
+
+        .cursorballhighlight {
+            position: fixed; /* Use fixed so it stays relative to the viewport */
+            width: 200px;
+            height: 200px;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            /* background: radial-gradient(circle, rgba(34, 100, 167, 0.6) 0%, rgba(0, 191, 255, 0.2) 40%, rgba(0, 191, 255, 0) 80%); */
+            background: radial-gradient(circle, #1e3e6aa1 1%,#10223e 40%, #0A192F 80%);
+            filter: blur(40px); /* Soft glow effect */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cursorballhighlight"></div>
+    <script src="js/cursorball.js"></script>
+</body>
+</html>

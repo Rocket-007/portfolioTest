@@ -6,6 +6,8 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+
+
 }
 
 /* Main container */
@@ -16,10 +18,6 @@ body {
     
     display: flex; 
     gap: 20px;
-    
-  /* justify-content: center; */
-  /* align-items:center; */
-
 }
 
 /* Sidebar Styling */
@@ -31,8 +29,6 @@ body {
     /* background-color: violet;  */
     background: #0A192F;
     height: 100%;
-
-    overscroll-behavior: contain;
 
 }
 
