@@ -1,11 +1,12 @@
 .cursorballhighlight {
     position: fixed; /* Use fixed so it stays relative to the viewport */
-    width: 1000px;
-    height: 1000px;
+    width: 1500px;
+    height: 1500px;
     pointer-events: none;
     transform: translate(-50%, -50%);
     /* background: radial-gradient(circle, rgba(34, 100, 167, 0.6) 0%, rgba(0, 191, 255, 0.2) 40%, rgba(0, 191, 255, 0) 80%); */
     /* background: radial-gradient(circle, #3d6cae 1%,#274d827d 1%,#10223e79 40%, #0a192f00 80%); */
-    background: radial-gradient(circle, #31599126 1%,#10223e40 40%, #0a192f10 80%);
-    filter: blur(30px); /* Soft glow effect */
+    /* background: radial-gradient(circle, #31599126 1%,#10223e40 40%, #0a192f10 80%); */
+    background: radial-gradient(circle, #31599126 1%,#10223e1c 40%, #0a192f10 calc(50% + 1px));
+    filter: blur(50px); /* Soft glow effect */
 }
