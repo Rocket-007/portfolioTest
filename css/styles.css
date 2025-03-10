@@ -1,6 +1,7 @@
 body {
     background: #0A192F;
-    color: #CCD6F6;
+    /* color: #CCD6F6; */
+    color: #8892B0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -36,19 +37,20 @@ body {
 
 
 .sidebar h1 {
-    color: #64FFDA;
+    /* color: #64FFDA; */
+    color: #e4f8ff;
     font-size: 3.2em;
     margin-bottom: 5px;
 }
 
 .sidebar h2 {
-    color: #8892B0;
-    font-size: 1.6em;
+    color: #bec9e7;
+    font-size: 1.5em;
     margin: 10px 0;
 }
 
 .sidebar p {
-    color: #A8B2D1;
+    color: #8892B0;
     font-size: 1.1em;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -112,8 +114,14 @@ nav ul li a:hover {
     line-height: 1.5;
     margin-bottom: 15px;
 }
-
-
+.about p a {
+    text-decoration: none; 
+    color: #CCD6F6;
+    font-weight: bold;
+}
+.about p a:hover { 
+    color: #64FFDA;
+}
 
 /* Tech Stack Bubbles */
 .tech-stack {
@@ -142,22 +150,51 @@ nav ul li a:hover {
 
 
 /* Experience Section */
-.experience h3 {
+#experience h2{
+color: #CCD6F6;
+}
+#experience-list  { 
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column ; 
+    row-gap: 1px;
+}
+.experience-item {   
+    background: #0A192F;
+    padding: 0px 25px 20px 25px;
+    margin: 5px -10px;
+    border-radius: 8px;
+    transition: background-color 0.4s ease;
+}
+
+.experience-item h4 {  
+    margin: 16px 0px 10px 0px;
+}
+.experience-item h2 {
+    margin: 10px 0px;
+ 
+
+}
+.experience-item h2 a {
+    text-decoration: none; 
+    color: #CCD6F6;
+
+    font-size: 0.9em;
+    padding: -20px;
+
+}
+.experience-item:hover a { 
     color: #64FFDA;
-    border-bottom: 2px solid #64FFDA;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
 }
 
-.experience h2 {
-    color: #8892B0;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.experience-item:hover { box-shadow: 0px 2px 1px #354a719f inset;
+    /* background-color: #112240;  */
+    background-color: rgba(44, 66, 105, 0.211); 
+    /* background-color: #f5f5f5; */
 }
 
-.experience p {
-    color: #A8B2D1;
-    font-size: 1.1em;
+.experience-item p { 
+    margin: 0px 0px 15px 0px;
 }
 
 
@@ -168,6 +205,7 @@ nav ul li a:hover {
     flex-direction: column; 
     gap: 5px;
 }
+
 .project {
     display: flex;
     align-items: center;
@@ -186,7 +224,7 @@ nav ul li a:hover {
     margin: 0px;
 }
 
-.project h4 a {
+.project h4 a, .project h4{
     text-decoration: none;
     /* color: #64FFDA; */
     color: #CCD6F6;
@@ -196,9 +234,9 @@ nav ul li a:hover {
     color: #64FFDA;
 }
 
-.project:hover { box-shadow: 0px 1px 1px #182d539a inset;
+.project:hover { box-shadow: 0px 1px 1px #223b6a9a inset;
     /* background-color: #112240;  */
-    background-color: rgba(44, 66, 105, 0.088); 
+    background-color: rgba(44, 66, 105, 0.183); 
     /* background-color: #f5f5f5; */
 }
 .project img {
