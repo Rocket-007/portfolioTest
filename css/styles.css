@@ -109,17 +109,17 @@ nav ul li a:hover {
     /* background-color: yellow; */
 }
 
-.about p {
+#about p {
     font-size: 1.0em;
     line-height: 1.5;
     margin-bottom: 15px;
 }
-.about p a {
+#about p a {
     text-decoration: none; 
     color: #CCD6F6;
     font-weight: bold;
 }
-.about p a:hover { 
+#about p a:hover { 
     color: #64FFDA;
 }
 
@@ -203,7 +203,7 @@ color: #CCD6F6;
     /* background-color: red; */
     display: flex;
     flex-direction: column; 
-    gap: 5px;
+    gap: 0px;
 }
 
 .project {
@@ -213,11 +213,30 @@ color: #CCD6F6;
     
     background: #0A192F;
     padding: 15px;
-    margin: 15px -10px;
+    margin: 5px -10px;
     border-radius: 8px;
     transition: background-color 0.4s ease;
 
+    
+
+    position: relative;
      
+}
+.project div h4 span {
+    /* .project_span_link { */
+    position: absolute;
+
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1  ;
+    opacity: 0;
+    
+    /* pointer-events: none; */
+    /* cursor: default; */
+
 }
 
 .project h4 {
@@ -244,11 +263,14 @@ color: #CCD6F6;
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
-    background-color: red;
+    
+    background-color: rgba(44, 66, 105, 0.183); 
 }
 .project-info {
     flex: 1;
 } 
+
+
 
 
 
@@ -276,6 +298,82 @@ color: #CCD6F6;
     color: #0A192F;
 }
 
+.filter-buttons button.active {
+    background: #64FFDA;
+    color: #0A192F;
+}
+
+
+
+
+
+/* CONTACT */
+#credits a {
+    text-decoration: none; 
+    color: #CCD6F6;
+    font-weight: bold;
+}
+#credits a:hover { 
+    color: #64FFDA;
+}
+
+
+
+
+
+
+
+
+
+
+/* <!-- OVERLAY LOADER -->  */
+#project-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.hidden {
+    display: none;
+}
+.overlay-content {
+    background: #0A192F;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+}
+#overlay-iframe {
+    width: 100%;
+    /* height: 100%; */
+    height: 95vh; /* Adjust based on your content */
+    border: none;
+}
+#close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
+
+
+
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
 /* @media (max-width: 768px) { */
@@ -300,6 +398,7 @@ color: #CCD6F6;
         height: 25px;
     }
 }
+
 
 
 

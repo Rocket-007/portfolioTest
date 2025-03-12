@@ -1,0 +1,109 @@
+/* General Reset */
+
+
+/* Dark Mode Styling */
+body {
+ 
+    /* text-align: center; */
+    padding: 60px;
+}
+
+ 
+
+/* FIGURES AND CAPTIONS */
+.figure-and-caption {
+    padding: 0px 0px 30px 20px;
+    margin-top: 0px;
+}
+.figure-and-caption p { 
+    margin-bottom: 4px;
+}
+
+/* IMAGES */
+
+.landscape-body-img {
+    width:350px;
+    height:200px;   
+    background-color: rgba(44, 66, 105, 0.183); 
+    
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    overflow: hidden
+}
+.potrait-body-img {
+    width:160px;
+    height:290px; 
+    background-color: rgba(44, 66, 105, 0.183); 
+    
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.landscape-body-img img, .potrait-body-img img{ 
+    top:0; left:0; 
+    width:100%;
+    
+    border-radius: 8px;
+      
+    /* optionally disable these two */
+    /* min-width: 100%;  */
+    /* min-height: 100%; */
+
+     
+
+    
+}
+
+/* img {
+    width: 60%;
+    height: 60%;  
+    border-radius: 8px;
+    
+} */
+
+
+
+/* Game Gallery */
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    white-space: nowrap;
+}
+
+.gallery img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Links */
+a {
+    text-decoration: none; 
+    color: #CCD6F6;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #64FFDA;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}

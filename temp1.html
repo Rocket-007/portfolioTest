@@ -3,109 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <link rel="stylesheet" href="css/styles.csss">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            display: flex;
-            min-height: 100vh;
-        }
-
-        aside {
-            width: 250px;
-            background: #112240;
-            color: white;
-            padding: 20px;
-            position: fixed;
-            height: 100vh;
-            overflow-y: auto; /* Enable scrolling if content is large */
-        }
-
-        main {
-            flex: 1;
-            margin-left: 250px; /* Same as aside width */
-            padding: 20px;
-        }
-
-        /* Responsive Design for Mobile */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            aside {
-                width: 100%;
-                position: relative;
-                height: auto;
-                padding: 15px;
-            }
-
-            main {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <title>2D Blobs - First Game</title>
+    <link rel="stylesheet" href="css/iframes_style.css">
 </head>
 <body>
 
-    <div class="container">
-        <aside>
-            <h2>Sidebar</h2>
-            <p>Menu items go here.</p>
-            <hr>sdfs
-        </aside>
+    <div class="wrapper">
+        <header>
+            <h1><a href="https://rocket-007.github.io/">Ngwu Charles Obinna (Rocket)</a></h1>
+            <img src="/images/logo.png?raw=true" alt="Logo">
+            <p>
+                First description <br><br>
+                <b>Languages</b>: Lua, Python, GLSL, HTML & CSS <br>
+                <b>Technology</b>: Love2D, Pygame, PHPMyAdmin <br><br>
+                <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a>
+            </p>
+            <p class="view"><a href="https://github.com/Rocket-007">View My GitHub Profile</a></p>
+        </header>
 
-        <main>
-            <h1>Main Content</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <p>Scroll to see how the sidebar remains fixed on large screens.</p>
-
-            <br>
-            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>        
-
-            <br>
-            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>            <br>
-            <br>        
+        <section>
             <hr>
 
-        </main>
+            <h3 id="2d-blobs">2D Blobs (First Game)</h3>
+            <p><strong>A 2D platformer shooter game with cool and bright graphics</strong></p>
+            <p>This is the very first well-published game project I made while learning Love2D and programming on my <a href="/myPhoneSpec">mobile</a>.</p>
+
+            <div class="gallery">
+                <img src="https://github.com/Rocket-007/Rocket-007.github.io/blob/master/images/2d-Blobs_img0.2.png?raw=true" alt="Bug Fixing">
+                <img src="https://github.com/Rocket-007/Rocket-007.github.io/blob/master/images/2d-Blobs_img2.png?raw=true" alt="Debugging">
+                <img src="https://github.com/Rocket-007/Rocket-007.github.io/blob/master/images/2d-Blobs_img1.png?raw=true" alt="Shooting Fix">
+                <img src="https://github.com/Rocket-007/Rocket-007.github.io/blob/master/images/2d-Blobs_img10.png?raw=true" alt="Small Screen">
+                <img src="https://github.com/Rocket-007/Rocket-007.github.io/blob/master/images/2d-Blobs_img8.png?raw=true" alt="Main Menu">
+            </div>
+
+            <p>You can view the complete code repository <a href="https://github.com/Rocket-007/2d-Blobs">here</a> or download the APK <a href="https://github.com/Rocket-007/2d-Blobs/releases/download/v1.0/2D_Blobs.apk">here</a></p>
+        </section>
+
+        <footer>
+            <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">OrderedList</a></small></p>
+        </footer>
     </div>
 
 </body>
