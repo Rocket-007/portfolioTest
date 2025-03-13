@@ -98,8 +98,11 @@ div.scroll-container img:hover {
 
 
 /* youtube-iframe" */
+.youtube-iframe { 
+    display: flex; 
+}
 .youtube-iframe iframe { 
-    /* margin: 0 auto; doesnt work sef */
+    margin: 0 auto;
 }
 
 /* Links */
