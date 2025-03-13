@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const projects = document.querySelectorAll(".project");
+    const projectsSection = document.querySelector("#projects"); // Target only the projects section
+
+    projectsSection.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent navigation only for links inside #projects
+            console.log("Project link clicked!"); // Handle the click event
+        });
+    });
+
+    const projects = projectsSection.querySelectorAll(".project");
     const overlay = document.getElementById("project-overlay");
     const iframe = document.getElementById("overlay-iframe");
     const closeOverlay = document.getElementById("close-overlay");
