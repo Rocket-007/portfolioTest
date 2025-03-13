@@ -48,7 +48,19 @@ body {
     overflow: hidden;
 
 }
-.landscape-body-img img, .potrait-body-img img{ 
+.square-body-img {
+    width:290px;
+    height:290px; 
+    background-color: rgba(44, 66, 105, 0.183); 
+    
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.landscape-body-img img, .potrait-body-img img, .square-body-img img{ 
     top:0; left:0; 
     width:100%;
     
@@ -61,17 +73,17 @@ body {
     
     /* transition: transform 0.3s; */
 }
-.landscape-body-img img:hover, .potrait-body-img img:hover {
+.landscape-body-img img:hover, .potrait-body-img img:hover, .square-body-img img:hover {
     /* transform: scale(1.1); */
 }
 
 
 /* Game Gallery Scroll */
 div.scroll-container {
-    background-color: #333;
+    background-color: rgba(1, 9, 29, 0.428);
     overflow: auto;
     white-space: nowrap;
-    padding: 10px;
+    padding: 15px;
 }
 div.scroll-container img {
     padding: 10px;
