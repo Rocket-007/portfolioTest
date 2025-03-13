@@ -7,7 +7,7 @@ body {
     /* text-align: center; */
     display: block;  
     /* normally on the main styles.css, the body is flexed which affects my gallary */
-    padding: 0 60px;
+    padding: 0px;
 }
 
  
@@ -97,6 +97,10 @@ div.scroll-container img:hover {
 }
 
 
+/* youtube-iframe" */
+.youtube-iframe iframe { 
+    /* margin: 0 auto; doesnt work sef */
+}
 
 /* Links */
 a {
