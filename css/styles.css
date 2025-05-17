@@ -89,12 +89,12 @@ nav ul li a:hover {
 .social-icons img {
     width: 30px;
     height: 30px;
-    filter: brightness(0) invert(1);
+    filter: invert(60%);
     transition: 0.3s;
 }
 
 .social-icons img:hover {
-    filter: brightness(0.8) invert(1);
+    filter: invert(100%);
 }
 
 /* Main Content */
